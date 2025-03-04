@@ -1,0 +1,22 @@
+function Form(){
+    function handleClick(){
+        alert("Clicked")
+    }
+
+    return(
+        <div>
+            {/* {Form for the user to input data} */}
+            <form>
+                <label>  Name</label>
+                <input type="text" />
+                <label>URL</label>
+
+                <input type="text" />
+            
+            </form>
+            <button onClick = {handleClick}>Submit</button>
+     {/* {A table the user can use to see their submissions} */}
+        </div>
+    )
+}
+export default Form
