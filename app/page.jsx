@@ -4,12 +4,21 @@ import Table from "./Components/table"
 import {useState} from "react"
 function HomePage(){
 
-    
+    const [newFavLink, setNewFavLink] = useState({})
+
+    function handleNewFavLink(favLink){
+
+        console.log(favLink,"in HomePage")
+
+        setNewFavLink(favLink)
+    }
     return (
         <div>
             <h1>FavLinks</h1>
-       <Form />
-       <Table/>
+       <Form submitFavLink = {handleNewFavLink}/>
+
+
+       <Table data = {newFavLink}/>
         </div>
     )
 }
