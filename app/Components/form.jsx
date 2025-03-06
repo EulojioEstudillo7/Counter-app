@@ -2,7 +2,7 @@ import {useState} from 'react'
 
 
 
-function Form(){
+function Form(props){
     //state - a way for us to set and reference data that changes in our components
     
      const [name, setName] = useState("")
